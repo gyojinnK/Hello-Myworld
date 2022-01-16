@@ -1,0 +1,9 @@
+body{margin: 0; padding: 0; height: 100%;}
+body > div{height: 100%;}
+
+header{height: 33.3333vh; background-image: url('../../img/field.jpg.jpg'); background-position-y: center; font-size: 10em; color: rgba(255, 255, 255, 0.7); text-align: center;}
+
+section{height: 33.3333vh; background-image: url('../../img/lake.jpg.jpg'); background-position-y: center; font-size: 10em; color: rgba(255, 255, 255, 0.7); text-align: center;}
+section ul{margin: 0; padding: 0; list-style: none; color:white; }
+
+footer{height: 33.3333vh; background-image: url('../../img/road.jpg.jpg'); background-position-y: center; font-size: 10em; color: rgba(255, 255, 255, 0.7); text-align: center;}

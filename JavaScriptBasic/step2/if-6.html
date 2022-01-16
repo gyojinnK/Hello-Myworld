@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>조건문-6</title>
+    <!-- 학점 -->
+</head>
+<body>
+    <script>
+        var score = window.prompt("점수를 입력하세요.", "점수");
+
+        score = parseInt(score);
+
+        if(score >= 90 && score <= 100){
+            document.write(score + "점, 등급 A");
+        }
+        else if(score >= 80 && score < 90){
+            document.write(score + "점, 등급 B");
+        }
+        else if(score >= 70 && score < 80){
+            document.write(score + "점, 등급 C");
+        }
+        else if(score >= 60 && score < 70){
+            document.write(score + "점, 등급 D");
+        }else{
+            document.write(score + "점, 등급 F");
+        }
+        //조건이 중요!
+    </script>
+</body>
+</html>

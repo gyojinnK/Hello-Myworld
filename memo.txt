@@ -1,0 +1,9 @@
+<memo>
+
+prompt가 return하는 값은 String타입!
+
+switch(한정된 데이터) => if문 보다 가독성이 좋다.
+    switch -> case -> break -> default(option으로 즉, 없어도 상관X)
+    모든 switch문은 if문으로 변형 가능
+        BUT!!
+    모든 if문은 switch문으로 변형 불가

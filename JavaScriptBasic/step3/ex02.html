@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery로 색상 바꾸기</title>
+    <script src="./JavaScriptBasic/step3/libs/jquery.js"></script>
+    <script>
+        //현재 문서가 준비가 되면 function을 실행하라는 의미
+        $(document).ready(function(){
+            $(".menu").css("listStyle"
+            , "none");
+            $("#menu2 li").css("color","#f00");
+        });
+    </script>
+</head>
+<body>
+    <div>
+        <ul class="menu" id="menu1">
+            <li>김밥</li>
+            <li>비빔밥</li>
+            <li>제육덮밥</li>
+            <li>오징어덮밥</li>
+            <li>알밥</li>
+        </ul>
+        <ul class="menu" id="menu2">
+            <li>라면</li>
+            <li>물냉면</li>
+            <li>짜장면</li>
+            <li>스파게티</li>
+            <li>잔치국수</li>
+        </ul>
+    </div>
+</body>
+</html>

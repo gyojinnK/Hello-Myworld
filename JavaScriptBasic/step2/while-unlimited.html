@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>난수 발생 게임</title>
+    <style>
+        /* body{margin: 0; padding: 0; background-color: black;}
+        h1{color: white; vertical-align: center; text-align: center; height: 100%;} */
+    </style>
+</head>
+<body>
+    <h1>재밌는 숫자 맞추기 게임</h1>
+    <script>
+        var low = 0;    //범위의 최소값
+        var high = 0;   //범위의 최고값
+        var card = 0;   //정답 저장 변수
+        //게임의 정답을 맞추기 위해서 무한루프를 돌린다.
+        while(true){
+            var count = 0;  //사용자의 시도 횟수
+            low = 0;
+            high = 99;
+            //0~99까지의 난수를 발생
+            card = Math.floor(Math.random()*100)   //floor = 소수점 아래의 수를 버림
+            alert("수를 결정하였습니다. 맞춰 보세요.");
+
+            //내부 루프의 경우는 정해진 난수를 맞출 때까지 실행
+            while(true){
+                var n = 0;
+                alert(low + " ~ " + high);  //값의 범위를 출력
+                count++;
+                alert("시도횟수 : " + count + "번째");
+
+                n = prompt("정답을 입력하세요.","숫자");    //사용자로부터 숫자를 입력받음
+                n = parseInt(n);
+
+                if(n < low || n > high){
+                    alert("값의 범위를 벗어났어요.");
+                }else{  //정상적인 범위의 수가 입력된 경우
+                    if(n == card){
+                        alert("정답입니다!");
+                        break;
+                    }
+                    else if(n > card){  //입력된 값이 정답보다 큰 수라면
+                        alert("땡! 정답은 입력한 숫자보다 작습니다.");
+                        high = n;   //범위를 재지정하기 위해서 값을 대입
+                    }else{
+                        alert("땡! 정답은 입력한 숫자보다 큽니다.");
+                        low = n;
+                    }
+                }
+            }
+            alert("시도횟수는 " + count + "입니다.");
+
+            var con = confirm("다시 게임을 하시겠습니까?");
+            if(con == false){
+                break;
+            }
+        }
+    </script>
+</body>
+</html>

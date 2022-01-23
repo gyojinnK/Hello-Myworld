@@ -1,0 +1,5 @@
+body{font-size: 10pt;}
+div #panel{width: 600px; height: 500px; border: 1px solid #999; position: relative;}
+div #snupy{position: absolute; width: 80px; left: 50px; top: 120px;}
+div #nav{text-align: center; width: 600px;}
+div #nav > div{margin: 0 auto;}

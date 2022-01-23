@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수-3</title>
+</head>
+<body>
+    <script>
+        //구구단을 출력해주는 함수
+        function gugudanPrint(){
+            for(var i=2;i<=9;i++){
+                document.write(i + "단 출력<br>");
+                for(var j=1;j<=9;j++){
+                    document.write(i + " X " + j + " = " + (i*j) + "<br>");
+                }
+                document.write("<br>");
+            }
+        }
+        //함수는 코드 재활용을 한다. 코드도 절약되고 한 번 잘 만들어 놓으면
+        //지속적으로 호출만으로 사용할 수 있다.
+        gugudanPrint();
+        gugudanPrint();
+    </script>
+</body>
+</html>

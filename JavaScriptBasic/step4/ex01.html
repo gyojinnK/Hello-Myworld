@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수-1</title>
+</head>
+<body>
+    <script>
+        //함수를 사용하여 풀이
+        uName = prompt("이름을 입력하세요.","이름");
+        uCount = prompt("반복 횟수를 입력하세요.","횟수");
+        function callName(name, count){
+            for(var i=1;i<=count;i++){
+                document.write(i+ "." + name + "<br>");
+            }
+        }
+        callName(uName,uCount);
+    </script>
+</body>
+</html>
